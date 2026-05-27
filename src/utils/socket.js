@@ -15,7 +15,7 @@ export const initiateSocket = (userId) => {
     socket = null
   }
 
-  socket = io('/', {
+  socket = io(import.meta.env.VITE_SOCKET_URL || '/', {
     reconnection: true,
     reconnectionAttempts: 10,
     reconnectionDelay: 2000,
