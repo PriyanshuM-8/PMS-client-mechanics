@@ -319,7 +319,7 @@ export default function ActiveJob() {
                 <p className="text-blue-800 font-bold text-sm mb-2">Ask customer to scan and pay</p>
                 <div className="bg-white p-2 rounded-xl shadow-sm border border-blue-100">
                   <img
-                    src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(`upi://pay?pa=${job.mechanic?.upiId || 'demo@upi'}&pn=${job.mechanic?.name || 'Mechanic'}&am=${totalAmount}`)}`}
+                    src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(`upi://pay?pa=${job.mechanic?.upiId || '8957645372-2@axl'}&pn=${job.mechanic?.name || 'Mechanic'}&am=${totalAmount}`)}`}
                     alt="UPI QR Code" className="w-40 h-40 object-contain"
                   />
                 </div>

@@ -21,7 +21,7 @@ export default function Login() {
     if (phone.length !== 10) return setError('Enter valid 10-digit number')
     setError(''); setLoading(true)
     try {
-      const { data } = await api.post('/auth/login/phone', { phone })
+      const { data } = await api.post('/auth/login/phone', { phone, requestedRole: 'mechanic' })
       setIdentifier(data.identifier || phone)
       if (data.devOtp) setDevOtp(data.devOtp)
       setStep('otp')
@@ -34,7 +34,7 @@ export default function Login() {
     if (otp.length !== 6) return setError('Enter 6-digit OTP')
     setError(''); setLoading(true)
     try {
-      const { data } = await api.post('/auth/verify-otp', { identifier, otp, method: 'sms' })
+      const { data } = await api.post('/auth/verify-otp', { identifier, otp, method: 'sms', requestedRole: 'mechanic' })
       localStorage.setItem('mechanic_token', data.token)
       localStorage.setItem('mechanic_user', JSON.stringify(data.user))
       window.location.href = '/'
