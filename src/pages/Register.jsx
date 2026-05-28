@@ -222,7 +222,7 @@ export default function Register() {
 
               {devOtp && (
                 <div className="bg-yellow-50 border border-yellow-200 rounded-2xl p-4 mb-4">
-                  <p className="text-yellow-700 text-xs font-bold mb-1">Demo OTP (Dev Mode)</p>
+                  <p className="text-yellow-700 text-xs font-bold text-center">Test OTP</p>
                   <p className="text-2xl tracking-[0.4em] font-black text-yellow-900 text-center">{devOtp}</p>
                 </div>
               )}

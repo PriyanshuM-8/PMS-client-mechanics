@@ -252,7 +252,7 @@ export default function Login() {
         {devOtp && (
           <div className="bg-yellow-50 border border-yellow-200 rounded-2xl p-4 mb-4">
             <p className="text-yellow-700 text-xs font-bold">
-              Twilio Trial OTP
+              Test OTP
             </p>
 
             <p className="text-2xl tracking-[0.4em] font-black text-yellow-900 mt-2 text-center">
