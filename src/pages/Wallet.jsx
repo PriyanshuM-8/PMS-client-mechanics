@@ -110,7 +110,7 @@ export default function Wallet() {
 
   return (
     <div className="min-h-screen bg-[#F5F5F7] pb-28">
-      <div className="px-5 pt-12 pb-24 bg-gradient-to-br from-red-600 via-red-500 to-amber-500 rounded-b-[2.5rem] shadow-xl relative">
+      <div className="px-5 pt-[calc(3rem+env(safe-area-inset-top,0px))] pb-24 bg-gradient-to-br from-red-600 via-red-500 to-amber-500 rounded-b-[2.5rem] shadow-xl relative">
         <div className="flex items-center justify-between relative z-10">
           <div>
             <h1 className="text-2xl font-black text-white">My Wallet</h1>

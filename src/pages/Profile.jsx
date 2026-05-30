@@ -116,7 +116,7 @@ export default function Profile() {
     <div className="min-h-screen bg-[#F5F5F7] pb-28">
 
       {/* Hero */}
-      <div className="px-5 pt-12 pb-28 bg-gradient-to-br from-red-600 via-red-500 to-amber-500 rounded-b-[2.5rem] shadow-xl shadow-red-300/40 relative overflow-hidden">
+      <div className="px-5 pt-[calc(3rem+env(safe-area-inset-top,0px))] pb-28 bg-gradient-to-br from-red-600 via-red-500 to-amber-500 rounded-b-[2.5rem] shadow-xl shadow-red-300/40 relative overflow-hidden">
         <div className="absolute -top-6 -right-6 w-36 h-36 bg-white/10 rounded-full" />
         <div className="flex items-center justify-between relative z-10">
           <div>

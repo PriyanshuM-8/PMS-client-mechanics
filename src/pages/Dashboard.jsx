@@ -108,7 +108,7 @@ export default function Dashboard() {
     <div className="min-h-screen bg-[#F5F5F7] pb-28">
 
       {/* ── Header ── */}
-      <div className="px-5 pt-12 pb-24 bg-gradient-to-br from-red-600 via-red-500 to-amber-500 rounded-b-[2.5rem] shadow-xl shadow-red-300/40 relative overflow-hidden">
+      <div className="px-5 pt-[calc(3rem+env(safe-area-inset-top,0px))] pb-24 bg-gradient-to-br from-red-600 via-red-500 to-amber-500 rounded-b-[2.5rem] shadow-xl shadow-red-300/40 relative overflow-hidden">
         <div className="absolute -top-8 -right-8 w-44 h-44 bg-white/10 rounded-full" />
         <div className="absolute top-12 -right-4 w-24 h-24 bg-white/5 rounded-full" />
 

@@ -126,7 +126,7 @@ export default function ActiveJob() {
   return (
     <div className="min-h-screen bg-[#F5F5F7] pb-16">
       {/* Header */}
-      <div className="px-5 pt-12 pb-8 bg-gradient-to-br from-red-600 via-red-500 to-amber-500 rounded-b-[2.5rem] shadow-xl shadow-red-300/40 relative overflow-hidden">
+      <div className="px-5 pt-[calc(3rem+env(safe-area-inset-top,0px))] pb-8 bg-gradient-to-br from-red-600 via-red-500 to-amber-500 rounded-b-[2.5rem] shadow-xl shadow-red-300/40 relative overflow-hidden">
         <div className="absolute -top-6 -right-6 w-32 h-32 bg-white/10 rounded-full" />
         <button onClick={() => navigate(-1)} className="w-9 h-9 bg-white/20 rounded-full flex items-center justify-center border border-white/20 mb-5 active:scale-95 transition-all">
           <FaArrowLeft className="text-white text-sm" />

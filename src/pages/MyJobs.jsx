@@ -36,7 +36,7 @@ export default function MyJobs() {
     <div className="min-h-screen bg-[#F5F5F7] pb-28">
 
       {/* Header */}
-      <div className="px-5 pt-12 pb-20 bg-gradient-to-br from-red-600 via-red-500 to-amber-500 rounded-b-[2.5rem] shadow-xl shadow-red-300/40 relative overflow-hidden">
+      <div className="px-5 pt-[calc(3rem+env(safe-area-inset-top,0px))] pb-20 bg-gradient-to-br from-red-600 via-red-500 to-amber-500 rounded-b-[2.5rem] shadow-xl shadow-red-300/40 relative overflow-hidden">
         <div className="absolute -top-6 -right-6 w-32 h-32 bg-white/10 rounded-full" />
         <h1 className="text-2xl font-black text-white relative z-10">Job History</h1>
         <p className="text-white/60 text-xs mt-0.5 relative z-10">{jobs.length} total assignments</p>
