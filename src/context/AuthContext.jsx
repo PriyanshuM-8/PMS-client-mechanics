@@ -40,6 +40,7 @@ export const AuthProvider = ({ children }) => {
       socket.off('new_mechanic_job')
       socket.off('new_job')
       socket.off('job_completed_mechanic')
+      socket.off('booking_cancelled')
 
       socket.on('new_mechanic_job', handleNewJob)
       socket.on('new_job', handleNewJob)
@@ -56,6 +57,14 @@ export const AuthProvider = ({ children }) => {
             timerProgressBar: true,
           })
         }
+      })
+      socket.on('booking_cancelled', (data) => {
+        Swal.fire({
+          icon: 'warning',
+          title: 'Booking Cancelled',
+          text: 'The customer has cancelled the booking.',
+          confirmButtonText: 'OK'
+        })
       })
       console.log('[Mechanic] socket listeners attached, room:', userId)
     }
@@ -86,6 +95,7 @@ export const AuthProvider = ({ children }) => {
         socket.off('new_mechanic_job', handleNewJob)
         socket.off('new_job', handleNewJob)
         socket.off('job_completed_mechanic')
+        socket.off('booking_cancelled')
       }
       disconnectSocket()
     }
