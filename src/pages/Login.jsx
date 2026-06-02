@@ -47,7 +47,7 @@ export default function Login() {
     <div className="min-h-screen bg-white flex flex-col">
 
       {/* ── Hero ── */}
-     <div className="relative h-[250px] bg-gradient-to-br from-red-600 via-red-500 to-amber-500 rounded-b-[3rem] shadow-[0_20px_60px_rgba(239,68,68,0.35)] overflow-hidden">
+     <div className="relative h-90 bg-gradient-to-br from-red-600 via-red-500 to-amber-500 rounded-b-[3rem] shadow-[0_20px_60px_rgba(239,68,68,0.35)] overflow-hidden">
 
         {/* Blur Circle */}
         <div className="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-2xl" />
@@ -81,7 +81,7 @@ export default function Login() {
       </div>
 
       {/* ── Card ── */}
- <div className="flex-1 px-5 -mt-4 pb-8 flex flex-col">
+ <div className="flex-1 px-5 -mt-4 pb-40 flex flex-col">
   <div className="bg-white/95 backdrop-blur-xl rounded-[2.2rem] shadow-[0_20px_60px_rgba(0,0,0,0.08)] border border-white/60 p-6 flex-1 flex flex-col overflow-hidden">
 
     {/* Top Glow */}
@@ -320,6 +320,10 @@ export default function Login() {
 
   </div>
 </div>
+ <p className="flex gap-5 m-auto pb-12">           
+           <span className="text-gray-300 text-sm leading-relaxed">PM CareX</span>  
+           <span className="text-gray-300 text-sm leading-relaxed">v.1.0.0.0</span>  
+          </p>
     </div>
   )
 }
