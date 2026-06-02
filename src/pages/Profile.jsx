@@ -220,7 +220,7 @@ export default function Profile() {
           <FaChevronRight className="text-red-300 text-xs" />
         </button>
 
-        <p className="text-center text-[10px] text-gray-300 font-medium pb-2">PetroCareX Mechanics v1.0</p>
+        <p className="text-center text-[10px] text-gray-300 font-medium pb-2"> PM CareX Mechanics v1.0</p>
       </div>
 
       {/* Edit Sheet */}

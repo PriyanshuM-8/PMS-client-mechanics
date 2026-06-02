@@ -125,7 +125,7 @@ export default function Dashboard() {
 
         {/* Greeting */}
         <div className="mt-5 relative z-10">
-          <p className="text-white/60 text-xs font-medium">{greeting} 👋</p>
+          <p className="text-white/60 text-xs font-medium">{greeting} </p>
           <h2 className="text-white font-black text-2xl leading-tight mt-0.5">Welcome Back, {firstName}!</h2>
           <div className="flex items-center gap-1.5 mt-1.5">
             <FaMapMarkerAlt className="text-white/50 text-xs flex-shrink-0" />
@@ -252,8 +252,8 @@ export default function Dashboard() {
         )}
 
         {/* ── Summary ── */}
-        <div className="bg-white rounded-3xl p-5 shadow-sm border border-gray-100">
-          <p className="text-gray-800 font-black text-sm mb-4">Overall Summary</p>
+        <div className="bg-white rounded-3xl p-4 shadow-sm border border-gray-100">
+          <p className="text-gray-800 font-black text-3xl mb-4">Overall Summary</p>
           <div className="grid grid-cols-2 gap-3">
             <div className="bg-gradient-to-br from-red-500 to-amber-400 rounded-2xl p-4 shadow-sm">
               <FaClipboardList className="text-white/70 text-base mb-2" />
@@ -269,9 +269,9 @@ export default function Dashboard() {
         </div>
 
         {/* ── Quick Links ── */}
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 gap-3">
           <Link to="/my-jobs" className="flex items-center gap-3 bg-white rounded-2xl p-4 border border-gray-100 shadow-sm active:scale-95 transition-all">
-            <div className="w-9 h-9 bg-purple-50 rounded-xl flex items-center justify-center">
+            <div className="w-9 h-15 bg-purple-50 rounded-xl flex items-center justify-center">
               <FaClipboardList className="text-purple-500 text-sm" />
             </div>
             <div>
@@ -280,7 +280,7 @@ export default function Dashboard() {
             </div>
           </Link>
           <Link to="/earnings" className="flex items-center gap-3 bg-white rounded-2xl p-4 border border-gray-100 shadow-sm active:scale-95 transition-all">
-            <div className="w-9 h-9 bg-green-50 rounded-xl flex items-center justify-center">
+            <div className="w-9 h-15 bg-green-50 rounded-xl flex items-center justify-center">
               <FaWallet className="text-green-500 text-sm" />
             </div>
             <div>
